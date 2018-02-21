@@ -6,18 +6,21 @@ public class PlayerHealth : MonoBehaviour {
 
     public float CurrentHealth;
     public float MaxHealth;
-
+    public bool HealthRegen;
 
 	void Start () {
         MaxHealth = 20f;
         // Resets health to full on game load
-        CurrentHealth = MaxHealth;
+        CurrentHealth = 10f;
 	}
 
 	void Update () {
-        if (CurrentHealth != 0)
+        if (HealthRegen == true)
         {
-            CurrentHealth += 0.05f;
+            if (CurrentHealth != 0)
+            {
+                CurrentHealth += 0.05f;
+            }
         }
         if(CurrentHealth >= MaxHealth)
         {
@@ -38,6 +41,13 @@ public class PlayerHealth : MonoBehaviour {
         {
             Die();
         }
+    }
+
+    public void ApplyHealthRegen(/*int Sleeptime*/)
+    {
+        HealthRegen = true;
+        //System.Threading.Thread.Sleep(Sleeptime * 100);
+        HealthRegen = false;
     }
 
     void Die()
