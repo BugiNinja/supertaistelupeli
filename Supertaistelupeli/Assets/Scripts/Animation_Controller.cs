@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Animation_Controller : MonoBehaviour {
-
+                                                                    //Tehnyt Sampo Tahvanainen
     bool IsInCombat = false;
     Animator anim;
     private PlayerHealth ph;
