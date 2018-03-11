@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
+    //Tehnyt Mikko Yrjölä
     float velX = -10f;
     Rigidbody rb;
     public float enemyDamage = 4;

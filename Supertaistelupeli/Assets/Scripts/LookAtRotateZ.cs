@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class LookAtRotateZ : MonoBehaviour {
+    //tehnyt Lassi Törmikoski
     //Rotates on Z Axis
     [Header ("Settings")]
     public bool lookAtMouse;
@@ -18,8 +19,8 @@ public class LookAtRotateZ : MonoBehaviour {
     public bool flipSprite;
 
     [Header ("Restrict Rotation")]
-    [Tooltip ("Restict directional rotation to angle between 0 to 180, 0 = default, no restriction")]
-    public float restrictRotatingAngle = 0;
+    [Tooltip ("Restict directional rotation to angle between 0 to 180, 180 = default, no restriction")]
+    public float restrictRotatingAngle = 180;
 
 
     Vector3 target;
@@ -44,7 +45,7 @@ public class LookAtRotateZ : MonoBehaviour {
         }
     }
 
-	void Update () {
+    private void Update () {
         //mouseinput
         if (lookAtMouse)
         {

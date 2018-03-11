@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class HealthBar : MonoBehaviour
 {
+    //tehnyt Mikko Yrjölä
     GameObject player;
     private PlayerHealth ph;
 

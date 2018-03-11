@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Jump : Actions
 {
+    //tehnyt Lassi Törmikoski
     Rigidbody rb;
     KeyCode Key = KeyCode.W;
     public float jumpVelocity = 4.0f;
@@ -38,7 +39,7 @@ public class Jump : Actions
     }
     private void OnCollisionEnter(Collision collision)
     {
-        if(collision.gameObject.tag == "ground")
+        if(collision.gameObject.tag == "Ground")
         {
             jumpCount = 0;
         }

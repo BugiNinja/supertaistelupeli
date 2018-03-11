@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Movement : MonoBehaviour
 {
+    //tehnyt Mikko Yrjölä
     private float inputDirection;
     private float verticalVelocity;
 

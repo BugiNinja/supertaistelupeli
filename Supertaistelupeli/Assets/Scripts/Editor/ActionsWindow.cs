@@ -3,7 +3,7 @@ using UnityEngine;
 using UnityEditor;
 
 public class ActionsWindow : EditorWindow {
-
+    //Tehnyt Lassi Törmikoski
     GameObject activeGameObject;
     ActionHandler ah;
     Actions[] actions;

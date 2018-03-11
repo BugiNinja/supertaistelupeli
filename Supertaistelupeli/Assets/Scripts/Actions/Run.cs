@@ -4,15 +4,16 @@ using UnityEngine;
 
 public class Run : Actions
 {
+    //Tehnyt Lassi Törmikoski
     KeyCode Key = KeyCode.LeftShift;
     bool isDone = false;
     float runMultiplier = 0.5f;
     public bool toggleRun = true;
-    Movement move;
+    HorizontalMovement move;
 
     void Start()
     {
-        move = GetComponent<Movement>();
+        move = GetComponent<HorizontalMovement>();
     }
 
     public override KeyCode GetKey()
@@ -25,12 +26,12 @@ public class Run : Actions
 
         if (!isDone)
         {
-           // move.speedMultiplier += runMultiplier;
+            move.speedMultiplier += runMultiplier;
             isDone = true;
         }
         else
         {
-            //move.speedMultiplier -= runMultiplier;
+            move.speedMultiplier -= runMultiplier;
             isDone = false;
         }
         

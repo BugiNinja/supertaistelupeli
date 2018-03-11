@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class EnemySpawner : MonoBehaviour {
-
+    //Tehnyt Mikko Yrjölä
     public GameObject enemy;
     float rndY;
     Vector3 whereToSpawn;

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerHealth : MonoBehaviour {
-
+    //tehnyt Mikko Yrjölä
     public float CurrentHealth;
     public float MaxHealth;
     public bool HealthRegen;

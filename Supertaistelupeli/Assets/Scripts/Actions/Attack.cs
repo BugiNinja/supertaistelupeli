@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Attack : Actions {
+    //tehnyt Lassi Törmikoski
     KeyCode Key = KeyCode.A;
     bool isDone = false;
 
